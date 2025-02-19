@@ -14,6 +14,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
 div.relogio {
@@ -25,6 +27,7 @@ div.relogio {
     background: transparent;
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
 }
 
 div.relogio > div {
@@ -38,7 +41,8 @@ div.relogio > div {
     background: rgba(5, 5, 5, .9);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
     border-radius: 7px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    margin: 5px;
 }
 
 div.relogio span {
@@ -48,10 +52,17 @@ div.relogio span {
 
 .relogio  span.tempo {
     font-size: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#ampm {
+    font-size: 24px;
+    color: #ddd;
+    font-weight: normal;
 }
 
 footer#footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
@@ -59,3 +70,39 @@ footer#footer {
     font-size: 10px;      
 }
 
+@media (max-width: 768px) {
+    .relogio {
+        font-size: 40px;
+    }
+
+    .tempo {
+        font-size: 14px;
+    }
+
+    #ampm {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .relogio {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .tempo {
+        font-size: 12px;
+    }
+
+    #ampm {
+        font-size: 18px;
+    }
+
+    .relogio div {
+        margin: 3px;
+    }
+}
