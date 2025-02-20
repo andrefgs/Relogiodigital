@@ -1,6 +1,6 @@
 # Relógio Digital
 
-Este projeto é um relógio digital simples desenvolvido com HTML, CSS e JavaScript. Ele exibe a hora atual em formato 24 horas e 12 horas (com AM/PM), com atualização em tempo real.
+Este projeto é um relógio digital simples desenvolvido com HTML, CSS e JavaScript. Ele exibe a hora atual em formato 24 horas, com atualização em tempo real.
 
 ## Tecnologias Utilizadas
 
@@ -11,5 +11,4 @@ Este projeto é um relógio digital simples desenvolvido com HTML, CSS e JavaScr
 ## Funcionalidades
 
 - Exibição da hora em tempo real (com atualização a cada segundo).
-- Formato de 12 horas com AM/PM.
 - Design responsivo que se adapta a diferentes tamanhos de tela (computadores, tablets, smartphones).
